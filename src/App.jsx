@@ -3,6 +3,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import TaskManager from './components/TaskManager';
 
 
 function App() {
@@ -17,14 +18,13 @@ function App() {
           <h1 className="text-3xl font-bold">Task Manager App</h1>
         </div>
       </header>
-
+    
       <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+        
         <div className="bg-white dark:bg-gray-800 overflow-hidden shadow rounded-lg p-6">
           <div className="flex flex-col items-center justify-center">
-            <p className="text-lg mb-4"></p>
             <div className="flex items-center gap-4 my-4">
-              <button className="bg-blue-500 text-white px-4 py-2 rounded-lg">Add Task</button>
-              <button className="bg-red-500 text-white px-4 py-2 rounded-lg">Delete Task</button>
+              <TaskManager />
             </div>
 
           </div>
